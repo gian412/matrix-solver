@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <head>
-    <title>Matrix solver</title>
+  <title>Matrix solver</title>
 </head>
 <body>
-    <h1>Matrix solver</h1>
-    <div id="columnsRows">
-        <label>How many columns does your matrix have?<input type="number" min="1" step="1" id="col"/></label>
-        <label>How many rows does your matrix have?<input type="number" min="1" step="1" id="row"/></label>
-        <button id="createMatrix">Create matrix</button>
-    </div>
+  <h1>Matrix solver</h1>
+  <form action="#" id="rowColDiv">
+    
+    <label
+      >How many rows does your matrix have?<input
+        type="number"
+        placeholder="1"
+        min="1"
+        step="1"
+        id="rowInput"
+        required
+    /></label><br />
+    <label
+      >How many columns does your matrix have?<input
+        type="number"
+        placeholder="1"
+        min="1"
+        step="1"
+        id="colInput"
+        required
+    /></label><br />
+    <input type="submit" id="createBtn" placeholder="Create matrix">
+  </r>
+  <div id="composerDiv" hidden>
+    <table id="matrixTbl"></table>
+  </div>
+  <script src="./index.js"></script>
 </body>
